@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...){
                 return(inverse)
                 
         }
-        
+        ## Else, tells makeCacheMatrix to inverse the matrix right now.        
         data <- x$get()
         inverse <- solve(data, ...)
         x$setinverse(inverse)
